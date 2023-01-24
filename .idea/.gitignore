@@ -1,0 +1,6 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/libraries/*_linux_*
+/libraries/*_mac_*
+/libraries/*_win_*

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="whitman.cs370proj.composer.MainController" prefHeight="400.0"
+            prefWidth="600.0" stylesheets="@Main.css"
+            xmlns="http://javafx.com/javafx/8">
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#handlePlay"
+                    stylesheets="@Main.css" text="Play scale">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button fx:id="stopButton" mnemonicParsing="false" onAction="#handleStop"
+                    text="Stop playing">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </center>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem fx:id="exitMenuItem" mnemonicParsing="false"
+                          onAction="#handleExit" text="Exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
